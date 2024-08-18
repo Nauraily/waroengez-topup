@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #e1bee7);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #000000, #ab06c9);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+header .cta-button {
+    background: linear-gradient(to right, #f8f6f6, #dddbdd);
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #e1bee7, 1b#e0f7fa);
+}
+
+.hero h1 {
+    color: #000000;
+}
+
+.hero p {
+    color: #000000;
+}
+
+.top-up-form {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+.top-up-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.top-up-form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.top-up-form input[type="text"],
+.top-up-form input[type="email"],
+.top-up-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.top-up-form .payment-methods {
+    margin-top: 1rem;
+}
+
+.top-up-form .payment-methods label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(to right, #e0f7fa, #e1bee7);
+    color: #fff;
+}

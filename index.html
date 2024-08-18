@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">TopUpGames</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Top-Up</a>
+            <a href="#">History</a>
+            <a href="#">Support</a>
+            <a href="#">Account</a>
+        </nav>
+        <button class="cta-button">Top Up Now</button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Top Up Your Game Now!</h1>
+            <p>Easy, fast, and secure top-up for your favorite games.</p>
+        </section>
+
+        <section class="top-up-form">
+            <h2>Top Up Form</h2>
+            <form id="top-up-form">
+                <label for="game">Select Game:</label>
+                <select id="game" name="game" onchange="updateDiamondOptions()">
+                    <option value="freefire">Free Fire</option>
+                    <option value="mobilelegend">Mobile Legends</option>
+                </select>
+
+                <label for="id">User ID:</label>
+                <input type="text" id="id" name="id" required>
+
+                <label for="zone">Zone:</label>
+                <input type="text" id="zone" name="zone" required>
+
+                <label for="email">Email (Optional):</label>
+                <input type="email" id="email" name="email">
+
+                <label for="diamond">Diamond Amount:</label>
+                <select id="diamond" name="diamond" required>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+
+                <label>Payment Method:</label>
+                <div class="payment-methods">
+                    <label><input type="radio" name="payment" value="gopay" required> GoPay</label>
+                    <label><input type="radio" name="payment" value="shopeepay" required> ShopeePay</label>
+                    <label><input type="radio" name="payment" value="dana" required> Dana</label>
+                </div>
+
+                <button type="submit" class="cta-button">Confirm Payment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TopUpGames. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
